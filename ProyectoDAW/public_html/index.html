@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="es">
+
     <head>
-        <title>TODO supply a title</title>
+        <title>Práctica 1</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./js/libCapas.js"></script>
+        <link rel="icon" type="image/ico" href="./img/icono.ico" sizes="64x64">
     </head>
-    <body>
-        <div>TODO write content</div>
+    <body onload="Cargar('inicio.html','cuerpo')">
+        <div align="center">
+            <table>
+                <tr>
+                    <td align="left"><a href="#" onclick="Cargar('inicio.html','cuerpo')">nombreEmpresa(logo)</a></td>
+                    <td><a href="#" onclick="Cargar('contacto.html','cuerpo')">Contacto</a></td>
+                    <td><a href="#" onclick="Cargar('productos.html','cuerpo')">Catalogo</a></td>
+                    <td><a href="#" onclick="Cargar('usuario.html','cuerpo')">Usuario</a></td>
+                    <td><a href="#" onclick="Cargar('administracion.html','cuerpo')">Administración(ocultar)</a></td>
+                    <td align="right"><a href="#" onclick="Cargar('tienda.html','cuerpo')">Lista de la compra</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="cuerpo"></div>
     </body>
 </html>
