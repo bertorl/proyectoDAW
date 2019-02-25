@@ -1,31 +1,35 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
-    <head>
-        <title>Práctica 1</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="./js/libCapas.js"></script>
-        <link rel="icon" type="image/ico" href="./img/icono.ico" sizes="64x64">
-    </head>
-    <body onload="Cargar('inicio.html','cuerpo')">
-        <div>
-            <div style="text-align: left;">
-               
-            <a href="#" onclick="Cargar('inicio.html','cuerpo')">
-                 <!-- <img src="images/yt.png" alt="no encontrada" /> -->
-            </a>
-            </div>
-            <table align="center">
-                <tr>
-                    <td><a href="#" onclick="Cargar('contacto.html','cuerpo')">Contacto</a></td>
-                    <td><a href="#" onclick="Cargar('productos.html','cuerpo')">Catalogo</a></td>
-                    <td><a href="#" onclick="Cargar('registro.html','cuerpo')">Usuario</a></td>
-                    <td><a href="#" onclick="Cargar('administracion.html','cuerpo')">Administración(ocultar)</a></td>
-                    <td align="right"><a href="#" onclick="Cargar('tienda.html','cuerpo')">Lista de la compra</a></td>
-                </tr>
-            </table>
-        </div>
-        <div id="cuerpo"></div>
-    </body>
+<head>
+	<title>Práctica 1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="./js/libCapas.js"></script>
+</head>
+
+<link href="nav.css" rel="stylesheet" type="text/css">
+
+<body onload="Cargar('inicio.html','cuerpo')">
+	<div class="navbar">
+		
+			
+				<a href="#" class= "logo" onclick="Cargar('inicio.html','cuerpo')">
+					<div class="logo-image">
+						<img src="./images/icon-inicio.jpg" alt="no se ve" width="50" height="50">
+					</div>
+					
+				</a>
+		
+		<a href="#" class="right" onclick="Cargar('productos.html','cuerpo')">Productos</a>
+		<a href="#" class="right" onclick="Cargar('tienda.html','cuerpo')">Carrito</a>
+		<a href="#" class="right" onclick="Cargar('usuario.html','cuerpo')">Usuario/Administrador</a>
+	</div>
+	<div id="cuerpo">
+	</div>
+
+	<footer>
+		Esto es la parte baja
+	</footer>
+</body>
 </html>
