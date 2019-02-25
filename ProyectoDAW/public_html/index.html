@@ -10,25 +10,38 @@
 </head>
 
 <body onload="Cargar('inicio.html','cuerpo')">
-	<div class="navbar">	
-
-		<a href="#" class= "logo-icon" onclick="Cargar('inicio.html','cuerpo')">
-			<div class="logo-icon">
-				<img src="./images/logo3.svg" alt="no se ve" width="100" height="100">
+	<header>
+		<nav>
+			<div>
+				<a href="#" class= "logo-icon" onclick="Cargar('inicio.html','cuerpo')">
+					<img src="./images/logo.svg" alt="no se ve" width="100" height="100">
+				</a>
 			</div>
-		</a>
-		<a href="#" class="login-icon" onclick="Cargar('usuario.html','cuerpo')">
-			<div class="login-icon">
-				<img src="./images/user-icon.png" alt="no" width="60" height="60">
+			<div>
+				<a href="#" class="login-icon" onclick="Cargar('usuario.html','cuerpo')">
+					<img src="./images/login.png" alt="no" width="60" height="60">
+				</a>
 			</div>
-		</a>
-		<a href="#" class="catalogo" onclick="Cargar('productos.html','cuerpo')">Catalogo</a>
-		<div class="buscador">
-			<input type="text" name="bus">
-		</div>
-		<a href="#" class="carrito" onclick="Cargar('tienda.html','cuerpo')">Carrito</a>
-	</div>
-
+			<div>
+				<a href="#" class="catalogo" onclick="Cargar('productos.html','cuerpo')">Catálogo</a>
+			</div>
+			<div class="lupa-image">
+				<img src="./images/lupa.svg" alt="no" width="20" height="20">
+			</div>
+			<div class="buscador">
+				<input type="text" name="bus">	
+			</div>
+			<div  class="carrito">
+				<a href="#" onclick="Cargar('tienda.html','cuerpo')">Carrito</a>
+			</div>
+			<div class="carrito-image">
+				<img src="./images/carrito.svg" alt="no" width="35" height="27">
+			</div>
+			
+			
+		</nav>
+	</header>
+	
 	<div id="cuerpo">
 	</div>
 
