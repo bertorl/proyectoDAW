@@ -1,26 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
 	<title>Práctica 1</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="./js/libCapas.js"></script>
+	<link href="./css/nav.css" rel="stylesheet" type="text/css">
 </head>
 
-<link href="nav.css" rel="stylesheet" type="text/css">
 
 <body onload="Cargar('inicio.html','cuerpo')">
-	<div class="navbar">
-		
-			
+	<div class="navbar">	
 				<a href="#" class= "logo" onclick="Cargar('inicio.html','cuerpo')">
 					<div class="logo-image">
 						<img src="./images/icon-inicio.jpg" alt="no se ve" width="50" height="50">
 					</div>
-					
 				</a>
-		
 		<a href="#" class="right" onclick="Cargar('productos.html','cuerpo')">Productos</a>
 		<a href="#" class="right" onclick="Cargar('tienda.html','cuerpo')">Carrito</a>
 		<a href="#" class="right" onclick="Cargar('usuario.html','cuerpo')">Usuario/Administrador</a>
@@ -29,7 +25,14 @@
 	</div>
 
 	<footer>
-		Esto es la parte baja
-	</footer>
+		<ul>
+			<li>
+				<a href="#" onclick="Cargar('about.html','cuerpo')">About</a>
+			</li>
+			<li>
+				<a href="#" onclick="Cargar('contact.html','cuerpo')">Contacto</a>
+			</li>
+		</ul>
+	</footer>	
 </body>
 </html>
