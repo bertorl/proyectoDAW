@@ -3,35 +3,59 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .navbar {
   width: 100%;
-  height: 50px;
+  height: 100px;
   background-color: teal;
   overflow: hidden;
 }
 
 .navbar a {
-  padding: 15px;
   color: white;
   text-decoration: none;
   font-size: 17px;
 }
 
-.right{
+a.carrito{
   float: right;
+  padding: 40px;
 }
 
-.right:hover {
+a.catalogo{
+  float: left;
+  padding: 40px;
+}
+
+.catalogo:hover{
   background-color: #006666;
 }
 
-.logo {
-    float: left;
+a.carrito:hover {
+  background-color: #006666;
 }
 
-.logo-image{
-   
-    overflow: hidden;
-    margin-top: -15px;
-    margin-left: -15px;
+.buscador {
+  float: left;
+  padding: 39px;
+}
+input[type=text]{
+  width: 200px;
+}
+
+a.login-icon{
+  width: 60px;
+  height: 60px;
+  float: right;
+  margin-top: 20px;
+}
+div.login-icon{
+  width: 60px;
+  height: 60px;
+  float: right;
+}
+
+.logo-icon{
+  width: 100px;
+  height: 100px;
+  float: left;
 }
 
 .active {
@@ -45,10 +69,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
   }
 }
 
-footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   text-align: center;
+footer ul{
+  list-style: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }

@@ -9,25 +9,33 @@
 	<link href="./css/nav.css" rel="stylesheet" type="text/css">
 </head>
 
-
 <body onload="Cargar('inicio.html','cuerpo')">
 	<div class="navbar">	
-				<a href="#" class= "logo" onclick="Cargar('inicio.html','cuerpo')">
-					<div class="logo-image">
-						<img src="./images/icon-inicio.jpg" alt="no se ve" width="50" height="50">
-					</div>
-				</a>
-		<a href="#" class="right" onclick="Cargar('productos.html','cuerpo')">Productos</a>
-		<a href="#" class="right" onclick="Cargar('tienda.html','cuerpo')">Carrito</a>
-		<a href="#" class="right" onclick="Cargar('usuario.html','cuerpo')">Usuario/Administrador</a>
+
+		<a href="#" class= "logo-icon" onclick="Cargar('inicio.html','cuerpo')">
+			<div class="logo-icon">
+				<img src="./images/logo3.svg" alt="no se ve" width="100" height="100">
+			</div>
+		</a>
+		<a href="#" class="login-icon" onclick="Cargar('usuario.html','cuerpo')">
+			<div class="login-icon">
+				<img src="./images/user-icon.png" alt="no" width="60" height="60">
+			</div>
+		</a>
+		<a href="#" class="catalogo" onclick="Cargar('productos.html','cuerpo')">Catalogo</a>
+		<div class="buscador">
+			<input type="text" name="bus">
+		</div>
+		<a href="#" class="carrito" onclick="Cargar('tienda.html','cuerpo')">Carrito</a>
 	</div>
+
 	<div id="cuerpo">
 	</div>
 
 	<footer>
 		<ul>
 			<li>
-				<a href="#" onclick="Cargar('about.html','cuerpo')">About</a>
+				<a href="#" onclick="Cargar('about.html','cuerpo')">About us</a>
 			</li>
 			<li>
 				<a href="#" onclick="Cargar('contact.html','cuerpo')">Contacto</a>
