@@ -1,0 +1,13 @@
+@font-face {
+  font-family: NexaLight;
+  src: url("../fonts/NexaDemo-Light.otf") format("opentype");
+}
+
+.main-content .item-post {
+	align-items: stretch;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    flex: 1 1 45%;
+    padding: 0 10px 20px;
+}
