@@ -1,13 +1,68 @@
 @font-face {
-  font-family: NexaLight;
-  src: url("../fonts/NexaDemo-Light.otf") format("opentype");
+	font-family: NexaLight;
+	src: url("../fonts/NexaDemo-Light.otf") format("opentype");
 }
 
-.main-content .item-post {
+.homepage-content {
+	max-width: 1080px;
+	margin: 40px auto 20px;
+	padding: 0 40px; 
+}
+
+.homepage-content .main-content {
 	align-items: stretch;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    flex: 1 1 45%;
-    padding: 0 10px 20px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.homepage-content .main-content .item-post {
+	align-items: stretch;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	flex: 1 1 30%;
+	padding: 0 10px 20px;
+}
+
+a:link, a:visited, a:active {
+	text-decoration:none;
+}
+
+.homepage-content .main-content .item-post a {
+	text-transform: uppercase;
+	width: 100%; 
+}
+
+.homepage-content .main-content .item-post a {
+	display: flex;
+	flex-flow: column-reverse nowrap;
+	justify-content: flex-end;
+	background-color: #ecf1f1;
+	color: #00979d;
+	font-family: "NexaLight";
+}  
+
+.homepage-content .main-content .item-post img {
+	height: auto;
+	width: 100%;
+	display: block; 
+}
+
+.homepage-content .main-content .item-post a .description {
+	font-size: 22px;
+	letter-spacing: 2px;
+	line-height: 1.6;
+	padding: 20px;
+}
+
+.homepage-content .main-content .item-post a .img-perros {
+	position: relative;
+}
+.homepage-content .main-content .item-post a .img-gatos {
+	position: relative;
+}
+
+.homepage-content .main-content .item-post a .img-pq-animales {
+	position: relative;
 }

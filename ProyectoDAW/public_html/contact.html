@@ -10,20 +10,30 @@ and open the template in the editor.
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="./js/maps.js"></script>
+	<link href="./css/contact.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div>Contacto: 
 
-		Puedes ponerte en contacto con nosotros a través del siguiente número de teléfono que le facilitamos o rellenando el formulario que hay a continuación. También puede visitar nuestra tienda física en Valencia.
-		¡Síguenos en las redes sociales para estar al día de nuestras ofertas!
+	<div class="contacto" align="center">
+		<div class="img_contact">
+			<img src="./images/contacto_teleoperador.svg" alt="imagen_contacto_teleoperador" height="300" width="300">
+		</div>
+		<div class="datos"> 
+			Contacto: 
 
-		Teléfono: 6667777888
+			Puedes ponerte en contacto con nosotros a través del siguiente número de teléfono que le facilitamos 
+			o rellenando el formulario que hay a continuación. También puede visitar nuestra tienda física en Valencia.
+			¡Síguenos en las redes sociales para estar al día de nuestras ofertas!
+
+			Teléfono: 6667777888
+		</div>
 	</div>
 
-	<div>
+
+	<div class="formulario" align="center">
 		<form action=".http://mipaginaweb.es/procesar.cgi" method="POST">
 			<div>
-				<table>
+				<table align="center">
 					<tr>                    
 						<td><input type="text" name="nom" placeholder="Nombre" required></td>
 					</tr>
@@ -44,8 +54,7 @@ and open the template in the editor.
 	<h1>Donde estamos</h1>
 	<div id="googleMap" style="width:100%;height:360px;"></div>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA0Bko9ZCtOvVcMh7MM32s2oWtfTvE4CE&callback=myMap"></script>
-
-<!-- Replace the value of the key parameter with your own API key. -->
-<!--AIzaSyAA0Bko9ZCtOvVcMh7MM32s2oWtfTvE4CE-->
+	<!-- Replace the value of the key parameter with your own API key. -->
+	<!--AIzaSyAA0Bko9ZCtOvVcMh7MM32s2oWtfTvE4CE-->
 </body>
 </html>
