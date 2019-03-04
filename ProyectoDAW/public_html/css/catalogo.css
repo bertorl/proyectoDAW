@@ -1,0 +1,25 @@
+@font-face {
+	font-family: NexaLight;
+	src: url("../fonts/NexaDemo-Light.otf") format("opentype");
+}
+
+.homepage-content {
+	max-width: 1080px;
+	margin: 40px auto 20px;
+	padding: 0 40px; 
+}
+
+table tr td a{
+	color: navy;
+	text-decoration: none;
+
+}
+
+table tr td a:hover{
+	color: orange;
+}
+
+table tr td {
+
+	padding-left: 5%;
+}

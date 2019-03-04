@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="./js/libCapas.js"></script>
 	<link href="./css/nav.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/ico" href="./images/logo.ico" sizes="64x64">
 </head>
 
 <body onload="Cargar('inicio.html','cuerpo')">
@@ -18,21 +19,30 @@
 				</a>
 			</div>
 			<div>
-				<a href="#" class="login-icon" onclick="Cargar('registro.html','cuerpo')">
+				<a href="#" class="login-icon" onclick="Cargar('login.html','cuerpo')">
 					<img src="./images/login.png" alt="no" width="60" height="60">
 				</a>
+
 			</div>
-			<div>
-				<a href="#" class="catalogo" onclick="Cargar('productos.html','cuerpo')">Catálogo</a>
-			</div>
-			<div class="lupa-image">
-				<img src="./images/lupa.svg" alt="no" width="20" height="20">
-			</div>
-			<div class="buscador">
-				<input type="text" name="bus">	
+			<div class="catalogo">
+				<button class="catalogo-but">Catálogo</button>
+				<i class="fa fa-caret-down"></i>
+				<div class="catalogo-content">
+					<a href="#" onclick="Cargar('productos.html','cuerpo')">Todos</a>
+				    <a href="#">Perros</a>
+				    <a href="#">Gatos</a>
+				    <div class="sub-catalogo">
+				    	<button class="catalogo-but">Pequeños animales</button>
+				    	<div class="sub-catalogo-content">
+				    		<a href="#">Hurones</a>
+				    		<a href="#">Pájaros</a>
+				    		<a href="#">Roedores</a>
+				    	</div>
+				    </div> 
+    			</div>
 			</div>
 			<div  class="carrito">
-				<a href="#" onclick="Cargar('tienda.html','cuerpo')">Carrito</a>
+				<a href="#" onclick="Cargar('cesta.html','cuerpo')">Carrito</a>
 			</div>
 			<div class="carrito-image">
 				<img src="./images/carrito.svg" alt="no" width="35" height="27">
@@ -44,14 +54,32 @@
 	</div>
 
 	<footer>
-		<ul>
-			<li>
-				<a href="#" onclick="Cargar('about.html','cuerpo')">About us</a>
-			</li>
-			<li>
-				<a href="#" onclick="Cargar('contact.html','cuerpo')">Contacto</a>
-			</li>
-		</ul>
+		<table>
+			<tr>
+				<td>
+					<div>
+						<img src="./images/EscudoUV.svg" alt="escudo UV" height="280" width="280">
+					</div>
+				</td>
+				<td>
+					<div>
+						<ul>
+							<li>
+								<a href="#" onclick="Cargar('about.html','cuerpo')">About us</a>
+							</li>
+							<li>
+								<a href="#" onclick="Cargar('contact.html','cuerpo')">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</td>
+				<td>
+					<div>
+						<img src="./images/GIT.svg" alt="escudo GIT" height="280" width="280">
+					</div>
+				</td>
+			</tr>
+		</table>	
 	</footer>	
 </body>
 </html>

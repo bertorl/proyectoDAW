@@ -26,11 +26,6 @@ nav a {
 
 }
 
-a.catalogo{
-  float: left;
-  padding: 40px;
-}
-
 .carrito-image {
 
   padding-top: 38px;
@@ -38,9 +33,64 @@ a.catalogo{
   margin-right: -40px;
   float: right;
 
+}
+
+.catalogo {
+  float: left;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.catalogo .catalogo-but {
+  font-size: 22px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: NexaLight;
+  margin: 0;
+
+}
+.catalogo-content {
+  display: none;
+  position: absolute;
+   min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: teal;
 
 }
 
+.sub-catalogo-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: teal;
+
+}
+.catalogo-content a {
+  text-decoration: none;
+  display: block;
+}
+
+.sub-catalogo-content a {
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+.catalogo:hover .catalogo-content{
+  display: block;
+}
+
+.sub-catalogo:hover .sub-catalogo-content{
+  display: block;
+}
+.catalogo-content a:hover {
+  background-color: #006666;
+}
 .catalogo:hover{
   background-color: #006666;
 }
@@ -62,17 +112,7 @@ a.login-icon{
   padding-right:25px;
 
 }
-.buscador {
-  float: left;
-  padding: 40px;
-  padding-left: 0px;
-}
 
-.lupa-image {
-  padding-top: 40px;
-  padding-right: 5px;
-  float: left;
-}
 .logo-icon{
   width: 100px;
   height: 100px;
@@ -93,7 +133,17 @@ footer{
   background-color: teal;
 }
 
-ul {
-  list-style: none;
+footer table {
+
+  height: 349px;
+  width: 100%;
 }
 
+ul {
+   list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+}

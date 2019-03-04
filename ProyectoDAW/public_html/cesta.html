@@ -4,13 +4,92 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="es">
+<head>
+	<title>Cesta</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./css/cesta.css" rel="stylesheet">
+</head>
+<body>
+	<div class="divespacio"></div>
+
+	<ul>
+		<li>
+			<table class="headcesta">
+				<tr> 
+					<td class="cesta-head-name"> <b>Cesta</b></td>
+					<td class="descr-head-name"><b>Descripcion</b></td>
+					<td class="cant-head-name"><b>cantidad</b></td>
+					<td class="precio-head-name"><b>precio</b> </td>
+				</tr>
+			</table>	
+			<hr/>
+		</li>
+
+		<li>
+			<div class="articulo">
+				<table >
+					<tr><td class="iconoCompra"><img src="./images/fallera.jpg" alt="articulo"></td>
+						<td class="description"><p><b>La fallera de fallera mayor de valencia de la ostura de la alta calidad del traje:</b> </p>
+							<p>Traje de fallera regional valenciano color ROJO con manteletas y zapatillas <br> El traje cumple con el certificado "Mi FALLACAN" </p>
+							<input type="button" value=" Eliminar" onclick="">
+						</td>
+						<td>
+							<select name="cantidad">
+								<option value="1">1</option> 
+								<option value="2">2</option> 
+								<option value="3">3</option>
+								<option value="10">4</option> 
+								<option value="11">5</option> 
+								<option value="12">6</option>
+							</select>
+						</td>	
+						<td class="precio"> 130€ </td>
+					</tr>
+				</table>	
+				<hr/>
+			</div>
+		</li>
+
+		<li> 
+			<div class="articulo">
+				<table >
+					<tr><td class="iconoCompra"><img src="./images/gato2.png" alt="articulo"></td>
+						<td class="description"> <p><b>Traje del gato del marinero de lo ancla en la cabeza de las manos falsas en cabeza :</b> </p>
+							<p>Traje de marinero para gatos, (el gato no va inclido)<br> Se ruega no intenten usar en humanos.</p>
+							<input type="button" value=" Eliminar" onclick="">
+						</td>
+						<td class="cantidad"> 			
+							<select name="cantidad">
+								<option value="1">1</option> 
+								<option value="2">2</option> 
+								<option value="3">3</option>
+								<option value="4">4</option> 
+								<option value="5">5</option> 
+								<option value="6">6</option>  
+							</select>
+						</td>
+						
+						<td class="precio"> 42€ </td>
+					</tr>
+				</table>	
+				<hr/>
+			</div>
+		</li>
+		<li>
+			<div class="precio, botones">152€</div>
+		</li>	
+	</ul> 
+
+	<div class="botones">
+		<input type="button" value="Finalizar pedido" onclick="">
+		<input type="button" value="Cancelar pedido" onclick="">
+		<input type="button" value="Seguir comprando" onclick="">
+	</div>
+
+	<div class="divespacio"></div>
+
+</body>
 </html>
+

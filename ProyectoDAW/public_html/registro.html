@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 
-	<style type="text/css">
-    input{
-       border:1px solid #29B29D;
-    }
+
+<head>
+	<title>Registro</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./css/registro.css" rel="stylesheet">
+	<style>
+		input{
+			border:1px solid #29B29D;
+		}
 	</style>
+</head>
 
-	<head>
-		<title>Formulario de registro</title>
-	</head>
-
-	<body>
+<body>
+	<div class="registro">
 		<div style="text-align: left; color: #29B29D; font-weight: bold; font-size: 16pt">
-			Formulario de registro
+			Formulario de registro:
 		</div>
 		<form action=".http://mipaginaweb.es/procesar.cgi" method="POST">
 			<div>
 				<br />
-	            <table>
-	                <tr>
-	                    <td>Nombre:</td>                    
-	                    <td><input type="text" name="nom" required></td>
-	                </tr>
-	                <tr>
-	                    <td>Correo electr&oacutenico:</td>
-	                    <td><input type="email" name="email" required></td>
-	                </tr>
-	                <tr>
-	                	<td>Confirmar correo electr&oacutenico:</td>
-	                	<td><input type="email" name="email2" required></td>
-	                </tr>
-	                <tr>
-	                	<td>Contrasenya:</td>
-	                	<td><input type="password" name="pwd" required></td>
-	                </tr>
-	                <tr>
-	                	<td>Confirmar contrasenya:</td>
-	                	<td><input type="password" name="pwd2" required></td>
-	                </tr>
-	                <tr>
-	                    <td>Tel&eacutefono:</td>
-	                    <td><input type="tel" name="telf" required></td>
-	                </tr>
-	                <tr>
-	                    <td>Localidad:</td>
-	                    <td><input type="text" name="localidad" required></td>
-	                </tr>
-	                 <tr>
-	                    <td>Provincia:</td>
-	                    <td><input type="text" name="prov" required></td>
-	                </tr>
-	                <tr>
-	                    <td>Direccil&oacuten:</td>
-	                    <td><input type="text" name="dir" required></td>
-	                </tr>
-	                <tr>
-	                    <td colspan="2"><input type="submit" value="Registro"></td>
-	                </tr>
-	            </table>
-        	</div>
+				<table>
+					<tr>
+						<td>Nombre:</td>                    
+						<td><input type="text" name="nom" required></td>
+					</tr>
+					<tr>
+						<td>Correo electrónico:</td>
+						<td><input type="email" name="email" required></td>
+					</tr>
+					<tr>
+						<td>Confirmar correo electrónico:</td>
+						<td><input type="email" name="email2" required></td>
+					</tr>
+					<tr>
+						<td>Contraseña:</td>
+						<td><input type="password" name="pwd" required></td>
+					</tr>
+					<tr>
+						<td>Confirmar contraseña:</td>
+						<td><input type="password" name="pwd2" required></td>
+					</tr>
+					<tr>
+						<td>Teléfono:</td>
+						<td><input type="tel" name="telf" required></td>
+					</tr>
+					<tr>
+						<td>Localidad:</td>
+						<td><input type="text" name="localidad" required></td>
+					</tr>
+					<tr>
+						<td>Provincia:</td>
+						<td><input type="text" name="prov" required></td>
+					</tr>
+					<tr>
+						<td>Dirección:</td>
+						<td><input type="text" name="dir" required></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" value="Registro"></td>
+					</tr>
+				</table>
+			</div>
 		</form>
-	</body>
+	</div>
+</body>
 </html>

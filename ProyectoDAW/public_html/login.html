@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>TODO supply a title</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./css/login.css" rel="stylesheet">
+	<style>
+		input{
+			border:1px solid #29B29D;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="login">
+	<form>
+		<div>
+			<br/>
+			<table>
+				<tr>
+					<td>Email: </td>
+					<td><input type="email" name="email" value="admin@admin.com" required></td>
+				</tr>
+				<tr>
+					<td>Contraseña:</td>
+					<td><input type="password" name="pwd" value="admin" required></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="Login" onclick="Cargar('admin_menu.html','cuerpo')">
+						<input type="submit" value="Registro" onclick="Cargar('registro.html','cuerpo')">
+					</td>
+				</tr>
+			</table>
+		</div>
+	</form>
+	</div>
+</body>
+</html>
